@@ -26,7 +26,7 @@ module.exports = function (req, res, url) {
 		case '/cc': {
 			title = 'Character Creator';
 			attrs = {
-				data: process.env.SWF_URL + '/cc.swf', // data: 'cc_.swf',
+				data: process.env.SWF_URL + 'https://ga.vyond.com/static/animation/cc.swf', // data: 'cc_.swf',
 				type: 'application/x-shockwave-flash', id: 'char_creator', width: '100%', height: '100%',
 			};
 			params = {
@@ -37,7 +37,7 @@ module.exports = function (req, res, url) {
 					'm_mode': 'school', 'isLogin': 'Y', 'isEmbed': 1, 'ctc': 'go', 'tlang': 'en_US',
 				},
 				allowScriptAccess: 'always',
-				movie: process.env.SWF_URL + '/cc.swf', // 'http://localhost/cc.swf'
+				movie: process.env.SWF_URL + 'https://ga.vyond.com/static/animation/cc.swf', // 'http://localhost/cc.swf'
 			};
 			break;
 		}
@@ -45,7 +45,7 @@ module.exports = function (req, res, url) {
 		case '/cc_browser': {
 			title = 'Character Creator Browser';
 			attrs = {
-				data: process.env.SWF_URL + '/cc_browser.swf', // data: 'cc_browser_.swf',
+				data: process.env.SWF_URL + 'https://ga.vyond.com/static/animation/cc_browser.swf', // data: 'cc_browser_.swf',
 				type: 'application/x-shockwave-flash', id: 'char_creator', width: '100%', height: '100%',
 			};
 			params = {
@@ -56,7 +56,7 @@ module.exports = function (req, res, url) {
 					'm_mode': 'school', 'isLogin': 'Y', 'isEmbed': 1, 'ctc': 'go', 'tlang': 'en_US',
 				},
 				allowScriptAccess: 'always',
-				movie: process.env.SWF_URL + '/cc_browser.swf', // 'http://localhost/cc_browser.swf'
+				movie: process.env.SWF_URL + 'https://ga.vyond.com/static/animation/cc_browser.swf', // 'http://localhost/cc_browser.swf'
 			};
 			break;
 		}
@@ -66,7 +66,7 @@ module.exports = function (req, res, url) {
 				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`;
 			title = 'Video Editor';
 			attrs = {
-				data: process.env.SWF_URL + '/go_full.swf',
+				data: process.env.SWF_URL + 'https://ga.vyond.com/static/animation/go_full.swf',
 				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
 			};
 			params = {
@@ -85,7 +85,7 @@ module.exports = function (req, res, url) {
 		case '/player': {
 			title = 'Video Player';
 			attrs = {
-				data: process.env.SWF_URL + '/player.swf',
+				data: process.env.SWF_URL + 'https://ga.vyond.com/static/animation/player.swf',
 				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
 			};
 			params = {
